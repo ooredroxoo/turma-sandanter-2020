@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="138" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="89T-up-civ">
             <objects>
-                <viewController id="H6S-5Q-aPF" sceneMemberID="viewController">
+                <viewController id="H6S-5Q-aPF" customClass="SecondViewController" customModule="TransicaoTela" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cp5-tZ-1ge">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -15,6 +15,7 @@
 		BC049130251C0407009C202C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC04912E251C0407009C202C /* LaunchScreen.storyboard */; };
 		BC04913B251C0408009C202C /* TransicaoTelaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04913A251C0408009C202C /* TransicaoTelaTests.swift */; };
 		BC049146251C0409009C202C /* TransicaoTelaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC049145251C0409009C202C /* TransicaoTelaUITests.swift */; };
+		BC04915A251C108D009C202C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC049159251C108D009C202C /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BC049141251C0409009C202C /* TransicaoTelaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransicaoTelaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC049145251C0409009C202C /* TransicaoTelaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransicaoTelaUITests.swift; sourceTree = "<group>"; };
 		BC049147251C0409009C202C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC049159251C108D009C202C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,7 @@
 			children = (
 				BC049123251C03FB009C202C /* AppDelegate.swift */,
 				BC049125251C03FB009C202C /* SceneDelegate.swift */,
-				BC049127251C03FB009C202C /* MainViewController.swift */,
+				BC04915E251C1406009C202C /* Views */,
 				BC049129251C03FB009C202C /* Main.storyboard */,
 				BC04912C251C0407009C202C /* Assets.xcassets */,
 				BC04912E251C0407009C202C /* LaunchScreen.storyboard */,
@@ -126,6 +128,15 @@
 				BC049147251C0409009C202C /* Info.plist */,
 			);
 			path = TransicaoTelaUITests;
+			sourceTree = "<group>";
+		};
+		BC04915E251C1406009C202C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC049127251C03FB009C202C /* MainViewController.swift */,
+				BC049159251C108D009C202C /* SecondViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC04915A251C108D009C202C /* SecondViewController.swift in Sources */,
 				BC049128251C03FB009C202C /* MainViewController.swift in Sources */,
 				BC049124251C03FB009C202C /* AppDelegate.swift in Sources */,
 				BC049126251C03FB009C202C /* SceneDelegate.swift in Sources */,
