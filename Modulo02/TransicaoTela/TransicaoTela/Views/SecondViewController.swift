@@ -13,4 +13,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad();
     }
     
+    @IBAction func voltar(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

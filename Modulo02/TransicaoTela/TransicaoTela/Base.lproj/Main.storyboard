@@ -15,8 +15,21 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYK-m6-pWJ">
+                                <rect key="frame" x="188" y="438" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="H6S-5Q-aPF" kind="presentation" id="KLz-iA-lIm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sYK-m6-pWJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="T2u-RH-gbP"/>
+                            <constraint firstItem="sYK-m6-pWJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jiZ-5e-CSu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -26,12 +39,25 @@
         <!--Second View Controller-->
         <scene sceneID="89T-up-civ">
             <objects>
-                <viewController id="H6S-5Q-aPF" customClass="SecondViewController" customModule="TransicaoTela" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="H6S-5Q-aPF" customClass="SecondViewController" customModule="TransicaoTela" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cp5-tZ-1ge">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aI5-Vq-afr">
+                                <rect key="frame" x="187" y="433" width="41" height="30"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="voltar:" destination="H6S-5Q-aPF" eventType="touchUpInside" id="EdB-xD-LFC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gPa-wG-7Fh"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="aI5-Vq-afr" firstAttribute="centerY" secondItem="gPa-wG-7Fh" secondAttribute="centerY" id="GGb-9p-rjY"/>
+                            <constraint firstItem="aI5-Vq-afr" firstAttribute="centerX" secondItem="gPa-wG-7Fh" secondAttribute="centerX" id="VzW-P8-UtC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X08-e1-Y2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
