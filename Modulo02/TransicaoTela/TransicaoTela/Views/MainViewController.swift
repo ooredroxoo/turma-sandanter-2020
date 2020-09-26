@@ -25,5 +25,19 @@ class MainViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         print("viewWillDisappear")
     }
+    
+    
+    @IBAction func tappedLoginButton(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "mainToDetails", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let detailsVC : DetailsViewController? = segue.destination as? DetailsViewController
+        detailsVC?.myText = "Olá da main view!"
+        
+    }
 }
 

@@ -16,6 +16,7 @@
 		BC04913B251C0408009C202C /* TransicaoTelaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04913A251C0408009C202C /* TransicaoTelaTests.swift */; };
 		BC049146251C0409009C202C /* TransicaoTelaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC049145251C0409009C202C /* TransicaoTelaUITests.swift */; };
 		BC04915A251C108D009C202C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC049159251C108D009C202C /* SecondViewController.swift */; };
+		BCC9D63A251EB13F0063B575 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC9D639251EB13F0063B575 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BC049145251C0409009C202C /* TransicaoTelaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransicaoTelaUITests.swift; sourceTree = "<group>"; };
 		BC049147251C0409009C202C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC049159251C108D009C202C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BCC9D639251EB13F0063B575 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				BC049127251C03FB009C202C /* MainViewController.swift */,
 				BC049159251C108D009C202C /* SecondViewController.swift */,
+				BCC9D639251EB13F0063B575 /* DetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				BC049128251C03FB009C202C /* MainViewController.swift in Sources */,
 				BC049124251C03FB009C202C /* AppDelegate.swift in Sources */,
 				BC049126251C03FB009C202C /* SceneDelegate.swift in Sources */,
+				BCC9D63A251EB13F0063B575 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

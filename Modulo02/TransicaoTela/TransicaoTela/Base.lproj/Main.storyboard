@@ -23,14 +23,25 @@
                                     <segue destination="H6S-5Q-aPF" kind="presentation" id="KLz-iA-lIm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njl-aH-F6K">
+                                <rect key="frame" x="184" y="513" width="47" height="30"/>
+                                <state key="normal" title="Details"/>
+                                <connections>
+                                    <action selector="tappedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h8P-Eb-xgJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="njl-aH-F6K" firstAttribute="top" secondItem="sYK-m6-pWJ" secondAttribute="bottom" constant="45" id="0Xs-Id-Jme"/>
                             <constraint firstItem="sYK-m6-pWJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="T2u-RH-gbP"/>
                             <constraint firstItem="sYK-m6-pWJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jiZ-5e-CSu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="uWm-ck-hzx" kind="presentation" identifier="mainToDetails" modalPresentationStyle="fullScreen" id="Ujm-q8-ge6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,12 +73,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X08-e1-Y2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="125"/>
+            <point key="canvasLocation" x="1367" y="467"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="dv9-J1-55i">
+            <objects>
+                <viewController id="uWm-ck-hzx" customClass="DetailsViewController" customModule="TransicaoTela" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aux-9O-eiz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGU-Ok-Pjg">
+                                <rect key="frame" x="186" y="96" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Adm-r0-gM1"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="RGU-Ok-Pjg" firstAttribute="top" secondItem="Adm-r0-gM1" secondAttribute="top" constant="52" id="YVX-Jl-SM5"/>
+                            <constraint firstItem="RGU-Ok-Pjg" firstAttribute="centerX" secondItem="Adm-r0-gM1" secondAttribute="centerX" id="bGW-Zt-b5g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="RGU-Ok-Pjg" id="2Yz-0J-swO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="caw-Kc-txm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1367" y="-244"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
