@@ -17,4 +17,7 @@ class DetailsViewController : UIViewController {
         self.myLabel.text = myText
     }
     
+    @IBAction func voltarTapped(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

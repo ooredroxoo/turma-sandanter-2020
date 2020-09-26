@@ -23,8 +23,8 @@
                                     <segue destination="H6S-5Q-aPF" kind="presentation" id="KLz-iA-lIm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njl-aH-F6K">
-                                <rect key="frame" x="184" y="513" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njl-aH-F6K">
+                                <rect key="frame" x="183.5" y="513" width="47" height="30"/>
                                 <state key="normal" title="Details"/>
                                 <connections>
                                     <action selector="tappedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h8P-Eb-xgJ"/>
@@ -36,6 +36,7 @@
                         <constraints>
                             <constraint firstItem="njl-aH-F6K" firstAttribute="top" secondItem="sYK-m6-pWJ" secondAttribute="bottom" constant="45" id="0Xs-Id-Jme"/>
                             <constraint firstItem="sYK-m6-pWJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="T2u-RH-gbP"/>
+                            <constraint firstItem="njl-aH-F6K" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ff8-QP-DFU"/>
                             <constraint firstItem="sYK-m6-pWJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jiZ-5e-CSu"/>
                         </constraints>
                     </view>
@@ -89,10 +90,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C2-0L-Oqu">
+                                <rect key="frame" x="186.5" y="125" width="41" height="30"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="voltarTapped:" destination="uWm-ck-hzx" eventType="touchUpInside" id="EpF-ch-a5N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Adm-r0-gM1"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
+                            <constraint firstItem="8C2-0L-Oqu" firstAttribute="centerX" secondItem="Adm-r0-gM1" secondAttribute="centerX" id="5WD-m8-NPk"/>
+                            <constraint firstItem="8C2-0L-Oqu" firstAttribute="top" secondItem="RGU-Ok-Pjg" secondAttribute="bottom" constant="8" symbolic="YES" id="WyI-Fp-fGt"/>
                             <constraint firstItem="RGU-Ok-Pjg" firstAttribute="top" secondItem="Adm-r0-gM1" secondAttribute="top" constant="52" id="YVX-Jl-SM5"/>
                             <constraint firstItem="RGU-Ok-Pjg" firstAttribute="centerX" secondItem="Adm-r0-gM1" secondAttribute="centerX" id="bGW-Zt-b5g"/>
                         </constraints>
