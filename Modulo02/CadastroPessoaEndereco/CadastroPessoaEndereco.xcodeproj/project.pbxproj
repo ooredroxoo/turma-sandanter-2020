@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC5EF6692522A1C400668419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EF6682522A1C400668419 /* AppDelegate.swift */; };
+		BC5EF66B2522A1C400668419 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EF66A2522A1C400668419 /* SceneDelegate.swift */; };
+		BC5EF66D2522A1C400668419 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EF66C2522A1C400668419 /* ViewController.swift */; };
+		BC5EF6702522A1C400668419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5EF66E2522A1C400668419 /* Main.storyboard */; };
+		BC5EF6722522A1CD00668419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5EF6712522A1CD00668419 /* Assets.xcassets */; };
+		BC5EF6752522A1CD00668419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5EF6732522A1CD00668419 /* LaunchScreen.storyboard */; };
+		BC5EF6802522A1CE00668419 /* CadastroPessoaEnderecoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EF67F2522A1CE00668419 /* CadastroPessoaEnderecoTests.swift */; };
+		BC5EF68B2522A1CE00668419 /* CadastroPessoaEnderecoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EF68A2522A1CE00668419 /* CadastroPessoaEnderecoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC5EF67C2522A1CE00668419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC5EF65D2522A1C400668419 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC5EF6642522A1C400668419;
+			remoteInfo = CadastroPessoaEndereco;
+		};
+		BC5EF6872522A1CE00668419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC5EF65D2522A1C400668419 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC5EF6642522A1C400668419;
+			remoteInfo = CadastroPessoaEndereco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC5EF6652522A1C400668419 /* CadastroPessoaEndereco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CadastroPessoaEndereco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC5EF6682522A1C400668419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC5EF66A2522A1C400668419 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC5EF66C2522A1C400668419 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC5EF66F2522A1C400668419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC5EF6712522A1CD00668419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC5EF6742522A1CD00668419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC5EF6762522A1CD00668419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5EF67B2522A1CE00668419 /* CadastroPessoaEnderecoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CadastroPessoaEnderecoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC5EF67F2522A1CE00668419 /* CadastroPessoaEnderecoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroPessoaEnderecoTests.swift; sourceTree = "<group>"; };
+		BC5EF6812522A1CE00668419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5EF6862522A1CE00668419 /* CadastroPessoaEnderecoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CadastroPessoaEnderecoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC5EF68A2522A1CE00668419 /* CadastroPessoaEnderecoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroPessoaEnderecoUITests.swift; sourceTree = "<group>"; };
+		BC5EF68C2522A1CE00668419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC5EF6622522A1C400668419 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5EF6782522A1CE00668419 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5EF6832522A1CE00668419 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC5EF65C2522A1C400668419 = {
+			isa = PBXGroup;
+			children = (
+				BC5EF6672522A1C400668419 /* CadastroPessoaEndereco */,
+				BC5EF67E2522A1CE00668419 /* CadastroPessoaEnderecoTests */,
+				BC5EF6892522A1CE00668419 /* CadastroPessoaEnderecoUITests */,
+				BC5EF6662522A1C400668419 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC5EF6662522A1C400668419 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC5EF6652522A1C400668419 /* CadastroPessoaEndereco.app */,
+				BC5EF67B2522A1CE00668419 /* CadastroPessoaEnderecoTests.xctest */,
+				BC5EF6862522A1CE00668419 /* CadastroPessoaEnderecoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC5EF6672522A1C400668419 /* CadastroPessoaEndereco */ = {
+			isa = PBXGroup;
+			children = (
+				BC5EF6682522A1C400668419 /* AppDelegate.swift */,
+				BC5EF66A2522A1C400668419 /* SceneDelegate.swift */,
+				BC5EF66C2522A1C400668419 /* ViewController.swift */,
+				BC5EF66E2522A1C400668419 /* Main.storyboard */,
+				BC5EF6712522A1CD00668419 /* Assets.xcassets */,
+				BC5EF6732522A1CD00668419 /* LaunchScreen.storyboard */,
+				BC5EF6762522A1CD00668419 /* Info.plist */,
+			);
+			path = CadastroPessoaEndereco;
+			sourceTree = "<group>";
+		};
+		BC5EF67E2522A1CE00668419 /* CadastroPessoaEnderecoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC5EF67F2522A1CE00668419 /* CadastroPessoaEnderecoTests.swift */,
+				BC5EF6812522A1CE00668419 /* Info.plist */,
+			);
+			path = CadastroPessoaEnderecoTests;
+			sourceTree = "<group>";
+		};
+		BC5EF6892522A1CE00668419 /* CadastroPessoaEnderecoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC5EF68A2522A1CE00668419 /* CadastroPessoaEnderecoUITests.swift */,
+				BC5EF68C2522A1CE00668419 /* Info.plist */,
+			);
+			path = CadastroPessoaEnderecoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC5EF6642522A1C400668419 /* CadastroPessoaEndereco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC5EF68F2522A1CE00668419 /* Build configuration list for PBXNativeTarget "CadastroPessoaEndereco" */;
+			buildPhases = (
+				BC5EF6612522A1C400668419 /* Sources */,
+				BC5EF6622522A1C400668419 /* Frameworks */,
+				BC5EF6632522A1C400668419 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CadastroPessoaEndereco;
+			productName = CadastroPessoaEndereco;
+			productReference = BC5EF6652522A1C400668419 /* CadastroPessoaEndereco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC5EF67A2522A1CE00668419 /* CadastroPessoaEnderecoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC5EF6922522A1CE00668419 /* Build configuration list for PBXNativeTarget "CadastroPessoaEnderecoTests" */;
+			buildPhases = (
+				BC5EF6772522A1CE00668419 /* Sources */,
+				BC5EF6782522A1CE00668419 /* Frameworks */,
+				BC5EF6792522A1CE00668419 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC5EF67D2522A1CE00668419 /* PBXTargetDependency */,
+			);
+			name = CadastroPessoaEnderecoTests;
+			productName = CadastroPessoaEnderecoTests;
+			productReference = BC5EF67B2522A1CE00668419 /* CadastroPessoaEnderecoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC5EF6852522A1CE00668419 /* CadastroPessoaEnderecoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC5EF6952522A1CE00668419 /* Build configuration list for PBXNativeTarget "CadastroPessoaEnderecoUITests" */;
+			buildPhases = (
+				BC5EF6822522A1CE00668419 /* Sources */,
+				BC5EF6832522A1CE00668419 /* Frameworks */,
+				BC5EF6842522A1CE00668419 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC5EF6882522A1CE00668419 /* PBXTargetDependency */,
+			);
+			name = CadastroPessoaEnderecoUITests;
+			productName = CadastroPessoaEnderecoUITests;
+			productReference = BC5EF6862522A1CE00668419 /* CadastroPessoaEnderecoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC5EF65D2522A1C400668419 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					BC5EF6642522A1C400668419 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					BC5EF67A2522A1CE00668419 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BC5EF6642522A1C400668419;
+					};
+					BC5EF6852522A1CE00668419 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BC5EF6642522A1C400668419;
+					};
+				};
+			};
+			buildConfigurationList = BC5EF6602522A1C400668419 /* Build configuration list for PBXProject "CadastroPessoaEndereco" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC5EF65C2522A1C400668419;
+			productRefGroup = BC5EF6662522A1C400668419 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC5EF6642522A1C400668419 /* CadastroPessoaEndereco */,
+				BC5EF67A2522A1CE00668419 /* CadastroPessoaEnderecoTests */,
+				BC5EF6852522A1CE00668419 /* CadastroPessoaEnderecoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC5EF6632522A1C400668419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5EF6752522A1CD00668419 /* LaunchScreen.storyboard in Resources */,
+				BC5EF6722522A1CD00668419 /* Assets.xcassets in Resources */,
+				BC5EF6702522A1C400668419 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5EF6792522A1CE00668419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5EF6842522A1CE00668419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC5EF6612522A1C400668419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5EF66D2522A1C400668419 /* ViewController.swift in Sources */,
+				BC5EF6692522A1C400668419 /* AppDelegate.swift in Sources */,
+				BC5EF66B2522A1C400668419 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5EF6772522A1CE00668419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5EF6802522A1CE00668419 /* CadastroPessoaEnderecoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5EF6822522A1CE00668419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5EF68B2522A1CE00668419 /* CadastroPessoaEnderecoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC5EF67D2522A1CE00668419 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC5EF6642522A1C400668419 /* CadastroPessoaEndereco */;
+			targetProxy = BC5EF67C2522A1CE00668419 /* PBXContainerItemProxy */;
+		};
+		BC5EF6882522A1CE00668419 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC5EF6642522A1C400668419 /* CadastroPessoaEndereco */;
+			targetProxy = BC5EF6872522A1CE00668419 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC5EF66E2522A1C400668419 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC5EF66F2522A1C400668419 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC5EF6732522A1CD00668419 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC5EF6742522A1CD00668419 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC5EF68D2522A1CE00668419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC5EF68E2522A1CE00668419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC5EF6902522A1CE00668419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CadastroPessoaEndereco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.rafaelns.CadastroPessoaEndereco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC5EF6912522A1CE00668419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CadastroPessoaEndereco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.rafaelns.CadastroPessoaEndereco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC5EF6932522A1CE00668419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CadastroPessoaEnderecoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.rafaelns.CadastroPessoaEnderecoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CadastroPessoaEndereco.app/CadastroPessoaEndereco";
+			};
+			name = Debug;
+		};
+		BC5EF6942522A1CE00668419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CadastroPessoaEnderecoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.rafaelns.CadastroPessoaEnderecoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CadastroPessoaEndereco.app/CadastroPessoaEndereco";
+			};
+			name = Release;
+		};
+		BC5EF6962522A1CE00668419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CadastroPessoaEnderecoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.rafaelns.CadastroPessoaEnderecoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CadastroPessoaEndereco;
+			};
+			name = Debug;
+		};
+		BC5EF6972522A1CE00668419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CadastroPessoaEnderecoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.rafaelns.CadastroPessoaEnderecoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CadastroPessoaEndereco;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC5EF6602522A1C400668419 /* Build configuration list for PBXProject "CadastroPessoaEndereco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5EF68D2522A1CE00668419 /* Debug */,
+				BC5EF68E2522A1CE00668419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC5EF68F2522A1CE00668419 /* Build configuration list for PBXNativeTarget "CadastroPessoaEndereco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5EF6902522A1CE00668419 /* Debug */,
+				BC5EF6912522A1CE00668419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC5EF6922522A1CE00668419 /* Build configuration list for PBXNativeTarget "CadastroPessoaEnderecoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5EF6932522A1CE00668419 /* Debug */,
+				BC5EF6942522A1CE00668419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC5EF6952522A1CE00668419 /* Build configuration list for PBXNativeTarget "CadastroPessoaEnderecoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5EF6962522A1CE00668419 /* Debug */,
+				BC5EF6972522A1CE00668419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC5EF65D2522A1C400668419 /* Project object */;
+}
