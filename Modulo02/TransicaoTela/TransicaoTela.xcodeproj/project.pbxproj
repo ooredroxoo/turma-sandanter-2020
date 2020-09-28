@@ -16,6 +16,7 @@
 		BC04913B251C0408009C202C /* TransicaoTelaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04913A251C0408009C202C /* TransicaoTelaTests.swift */; };
 		BC049146251C0409009C202C /* TransicaoTelaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC049145251C0409009C202C /* TransicaoTelaUITests.swift */; };
 		BC04915A251C108D009C202C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC049159251C108D009C202C /* SecondViewController.swift */; };
+		BC5EF65825229AB600668419 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5EF65725229AB600668419 /* Detail.storyboard */; };
 		BCC9D63A251EB13F0063B575 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC9D639251EB13F0063B575 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		BC049145251C0409009C202C /* TransicaoTelaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransicaoTelaUITests.swift; sourceTree = "<group>"; };
 		BC049147251C0409009C202C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC049159251C108D009C202C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BC5EF65725229AB600668419 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		BCC9D639251EB13F0063B575 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				BC04912C251C0407009C202C /* Assets.xcassets */,
 				BC04912E251C0407009C202C /* LaunchScreen.storyboard */,
 				BC049131251C0407009C202C /* Info.plist */,
+				BC5EF65725229AB600668419 /* Detail.storyboard */,
 			);
 			path = TransicaoTela;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				BC049130251C0407009C202C /* LaunchScreen.storyboard in Resources */,
 				BC04912D251C0407009C202C /* Assets.xcassets in Resources */,
 				BC04912B251C03FB009C202C /* Main.storyboard in Resources */,
+				BC5EF65825229AB600668419 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
