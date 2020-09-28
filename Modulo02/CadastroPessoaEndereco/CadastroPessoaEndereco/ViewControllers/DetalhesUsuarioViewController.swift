@@ -9,13 +9,23 @@ import UIKit
 
 class DetalhesUsuarioViewController: UIViewController {
 
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var cpfLabel: UILabel!
+    @IBOutlet weak var dataNascimentoLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var enderecoLabel: UILabel!
+    @IBOutlet weak var voltarButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func voltarAction(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -9,13 +9,25 @@ import UIKit
 
 class CadastroEnderecoViewController: UIViewController {
 
+    @IBOutlet weak var logadouroTextField: UITextField!
+    @IBOutlet weak var numeroTextField: UITextField!
+    @IBOutlet weak var complementoTextField: UITextField!
+    @IBOutlet weak var bairroTextField: UITextField!
+    @IBOutlet weak var cidadeTextField: UITextField!
+    @IBOutlet weak var estadoTextField: UITextField!
+    @IBOutlet weak var adicionaEnderecoButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func adicionaEnderecoAction(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 

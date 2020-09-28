@@ -32,6 +32,9 @@
                                 <state key="normal" title="Adicionar usuário">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="adicionaUsuario:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U6T-NJ-4UB"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fTU-5W-3fl">
                                 <rect key="frame" x="20" y="69" width="374" height="593"/>
@@ -54,6 +57,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="adicionaUsuarioButton" destination="mha-Zl-szs" id="d1N-d5-fiE"/>
+                        <outlet property="usersTableView" destination="fTU-5W-3fl" id="8fV-Xv-0rd"/>
                         <segue destination="fAk-M3-2GW" kind="presentation" identifier="mainToCadastroPessoa" id="0WU-4Y-DzM"/>
                         <segue destination="dGm-Jz-ue2" kind="presentation" identifier="mainToDetalhes" id="M8B-L8-K62"/>
                     </connections>
@@ -113,6 +118,9 @@
                                 <state key="normal" title="Adicionar endereço">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="adicionarEnderecoAction:" destination="fAk-M3-2GW" eventType="touchUpInside" id="MLm-NR-VTJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgK-bG-nOR">
                                 <rect key="frame" x="20" y="502" width="374" height="46"/>
@@ -124,6 +132,9 @@
                                 <state key="normal" title="Cadatrar usuário">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="cadastrarUsuarioAction:" destination="fAk-M3-2GW" eventType="touchUpInside" id="brg-oN-IEm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bfT-eu-Y4Q"/>
@@ -156,6 +167,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="adicionarEnderecoButton" destination="7mQ-B3-V49" id="jpM-Gh-cRL"/>
+                        <outlet property="cadastrarUsuarioButton" destination="AgK-bG-nOR" id="asm-3R-B6g"/>
+                        <outlet property="cpfTextField" destination="qC2-1C-LJl" id="Obm-1w-gNe"/>
+                        <outlet property="dataNascimentoDatePicker" destination="3Zv-o8-3VO" id="RmF-Q7-MuJ"/>
+                        <outlet property="emailTextField" destination="WNw-1A-yAB" id="7cU-Q1-V1f"/>
+                        <outlet property="nomeTextField" destination="4fk-qr-bPl" id="43C-MQ-ZEx"/>
                         <segue destination="5Tz-hx-ZL1" kind="presentation" identifier="cadastroPessoaParaCadastroEndereco" id="46u-9T-r2P"/>
                     </connections>
                 </viewController>
@@ -220,6 +237,9 @@
                                 <state key="normal" title="Adicionar endereço">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="adicionaEnderecoAction:" destination="5Tz-hx-ZL1" eventType="touchUpInside" id="KOj-TZ-qx0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Iln-5E-nql"/>
@@ -260,6 +280,15 @@
                             <constraint firstItem="Waw-ga-jAv" firstAttribute="trailing" secondItem="Xir-aa-hIt" secondAttribute="trailing" id="zPL-R3-SQJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adicionaEnderecoButton" destination="eyU-wo-clv" id="zIe-y3-noT"/>
+                        <outlet property="bairroTextField" destination="4eN-Fl-5b2" id="VfV-BX-NNX"/>
+                        <outlet property="cidadeTextField" destination="iob-2v-hwF" id="GLz-yY-b00"/>
+                        <outlet property="complementoTextField" destination="rRl-4G-OxD" id="gCC-EJ-LsA"/>
+                        <outlet property="estadoTextField" destination="Xir-aa-hIt" id="GYs-wg-wPz"/>
+                        <outlet property="logadouroTextField" destination="Waw-ga-jAv" id="hFW-pW-6dq"/>
+                        <outlet property="numeroTextField" destination="d16-1C-Ayg" id="7oy-9r-T9A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZm-x8-Gz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,7 +332,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e-mail: teste@teste.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu0-bT-9Ni">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereco" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu0-bT-9Ni">
                                 <rect key="frame" x="20" y="218" width="374" height="19.333333333333343"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                 <nil key="textColor"/>
@@ -319,6 +348,9 @@
                                 <state key="normal" title="Voltar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="voltarAction:" destination="dGm-Jz-ue2" eventType="touchUpInside" id="b9J-YQ-DTA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jP0-uk-eHD"/>
@@ -347,6 +379,14 @@
                             <constraint firstItem="s2F-pC-6Qa" firstAttribute="leading" secondItem="jP0-uk-eHD" secondAttribute="leading" constant="20" id="yvW-mT-zV7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cpfLabel" destination="6Ju-ae-dLj" id="Koz-0T-aMU"/>
+                        <outlet property="dataNascimentoLabel" destination="CkH-gl-T98" id="JCh-Zt-yiq"/>
+                        <outlet property="emailLabel" destination="gWf-L1-OGi" id="InG-eO-itc"/>
+                        <outlet property="enderecoLabel" destination="gu0-bT-9Ni" id="wMd-XV-gMf"/>
+                        <outlet property="nomeLabel" destination="wj6-LX-L3s" id="eUI-b2-fMx"/>
+                        <outlet property="voltarButton" destination="1jn-9l-CHw" id="5ej-43-AZq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRa-zF-F19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

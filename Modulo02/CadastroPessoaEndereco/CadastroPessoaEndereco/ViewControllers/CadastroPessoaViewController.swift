@@ -9,6 +9,13 @@ import UIKit
 
 class CadastroPessoaViewController: UIViewController {
 
+    @IBOutlet weak var nomeTextField: UITextField!
+    @IBOutlet weak var cpfTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var dataNascimentoDatePicker: UIDatePicker!
+    @IBOutlet weak var adicionarEnderecoButton: UIButton!
+    @IBOutlet weak var cadastrarUsuarioButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +23,12 @@ class CadastroPessoaViewController: UIViewController {
     }
     
 
+    
+    @IBAction func adicionarEnderecoAction(_ sender: UIButton) {
+    }
+    
+    @IBAction func cadastrarUsuarioAction(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 
