@@ -39,6 +39,32 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fTU-5W-3fl">
                                 <rect key="frame" x="20" y="69" width="374" height="593"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell" textLabel="z2m-Qe-DqD" detailTextLabel="sfl-Wp-ytN" style="IBUITableViewCellStyleSubtitle" id="V1Y-TC-6JV">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="55.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V1Y-TC-6JV" id="CPc-Pb-3oB">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="55.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z2m-Qe-DqD">
+                                                    <rect key="frame" x="20" y="8.9999999999999982" width="33" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sfl-Wp-ytN">
+                                                    <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="32.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,8 +85,8 @@
                     <connections>
                         <outlet property="adicionaUsuarioButton" destination="mha-Zl-szs" id="d1N-d5-fiE"/>
                         <outlet property="usersTableView" destination="fTU-5W-3fl" id="8fV-Xv-0rd"/>
-                        <segue destination="fAk-M3-2GW" kind="presentation" identifier="mainToCadastroPessoa" id="0WU-4Y-DzM"/>
-                        <segue destination="dGm-Jz-ue2" kind="presentation" identifier="mainToDetalhes" id="M8B-L8-K62"/>
+                        <segue destination="fAk-M3-2GW" kind="presentation" identifier="mainToCadastroPessoa" modalPresentationStyle="fullScreen" id="0WU-4Y-DzM"/>
+                        <segue destination="dGm-Jz-ue2" kind="presentation" identifier="mainToDetalhes" modalPresentationStyle="fullScreen" id="M8B-L8-K62"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -72,7 +98,7 @@
             <objects>
                 <viewController id="fAk-M3-2GW" customClass="CadastroPessoaViewController" customModule="CadastroPessoaEndereco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K6x-hO-g45">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Novo usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVO-6N-Jl3">
@@ -87,7 +113,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4fk-qr-bPl">
                                 <rect key="frame" x="20" y="69" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CPF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qC2-1C-LJl">
                                 <rect key="frame" x="20" y="111" width="374" height="34"/>
@@ -97,9 +123,9 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WNw-1A-yAB">
                                 <rect key="frame" x="20" y="153" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Zv-o8-3VO">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="3Zv-o8-3VO">
                                 <rect key="frame" x="0.0" y="224" width="414" height="216"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de Nascimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6x-6l-rwN">
@@ -108,22 +134,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mQ-B3-V49">
-                                <rect key="frame" x="20" y="448" width="374" height="46"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="zxf-Qm-OfJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Adicionar endereço">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="adicionarEnderecoAction:" destination="fAk-M3-2GW" eventType="touchUpInside" id="MLm-NR-VTJ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgK-bG-nOR">
-                                <rect key="frame" x="20" y="502" width="374" height="46"/>
+                                <rect key="frame" x="20" y="562" width="374" height="46"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="3S0-6O-mSS"/>
@@ -136,6 +148,26 @@
                                     <action selector="cadastrarUsuarioAction:" destination="fAk-M3-2GW" eventType="touchUpInside" id="brg-oN-IEm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mQ-B3-V49">
+                                <rect key="frame" x="20" y="508" width="374" height="46"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="zxf-Qm-OfJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Adicionar endereço">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="adicionarEnderecoAction:" destination="fAk-M3-2GW" eventType="touchUpInside" id="MLm-NR-VTJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sem endereco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qC-0a-Oms">
+                                <rect key="frame" x="20" y="448" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bfT-eu-Y4Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -143,12 +175,14 @@
                             <constraint firstItem="bfT-eu-Y4Q" firstAttribute="trailing" secondItem="qC2-1C-LJl" secondAttribute="trailing" constant="20" id="3Mw-7X-htV"/>
                             <constraint firstItem="bfT-eu-Y4Q" firstAttribute="trailing" secondItem="WNw-1A-yAB" secondAttribute="trailing" constant="20" id="42b-OY-gl9"/>
                             <constraint firstItem="qC2-1C-LJl" firstAttribute="top" secondItem="4fk-qr-bPl" secondAttribute="bottom" constant="8" symbolic="YES" id="4jG-Z8-Qos"/>
+                            <constraint firstItem="7mQ-B3-V49" firstAttribute="top" secondItem="4qC-0a-Oms" secondAttribute="bottom" constant="39" id="6jr-SM-gi8"/>
                             <constraint firstItem="3Zv-o8-3VO" firstAttribute="top" secondItem="O6x-6l-rwN" secondAttribute="bottom" constant="8" symbolic="YES" id="8Kn-AF-NH0"/>
                             <constraint firstItem="AgK-bG-nOR" firstAttribute="top" secondItem="7mQ-B3-V49" secondAttribute="bottom" constant="8" symbolic="YES" id="96A-xd-o0H"/>
                             <constraint firstItem="4fk-qr-bPl" firstAttribute="top" secondItem="SVO-6N-Jl3" secondAttribute="bottom" constant="8" symbolic="YES" id="AYL-TD-rXa"/>
                             <constraint firstItem="bfT-eu-Y4Q" firstAttribute="trailing" secondItem="O6x-6l-rwN" secondAttribute="trailing" constant="20" id="Cki-fe-BH1"/>
                             <constraint firstItem="qC2-1C-LJl" firstAttribute="leading" secondItem="bfT-eu-Y4Q" secondAttribute="leading" constant="20" id="Dh9-7r-dGg"/>
                             <constraint firstItem="bfT-eu-Y4Q" firstAttribute="trailing" secondItem="SVO-6N-Jl3" secondAttribute="trailing" constant="20" id="GWO-6x-v3W"/>
+                            <constraint firstItem="4qC-0a-Oms" firstAttribute="leading" secondItem="bfT-eu-Y4Q" secondAttribute="leading" constant="20" id="H9W-sB-VFa"/>
                             <constraint firstItem="SVO-6N-Jl3" firstAttribute="top" secondItem="bfT-eu-Y4Q" secondAttribute="top" constant="20" id="HxY-fa-OIx"/>
                             <constraint firstItem="bfT-eu-Y4Q" firstAttribute="trailing" secondItem="7mQ-B3-V49" secondAttribute="trailing" constant="20" id="IVx-9e-cM2"/>
                             <constraint firstItem="AgK-bG-nOR" firstAttribute="leading" secondItem="bfT-eu-Y4Q" secondAttribute="leading" constant="20" id="Kbb-Bh-QqS"/>
@@ -156,14 +190,15 @@
                             <constraint firstItem="SVO-6N-Jl3" firstAttribute="leading" secondItem="bfT-eu-Y4Q" secondAttribute="leading" constant="20" id="MFQ-WQ-GDF"/>
                             <constraint firstItem="7mQ-B3-V49" firstAttribute="leading" secondItem="bfT-eu-Y4Q" secondAttribute="leading" constant="20" id="Mbf-0n-e7F"/>
                             <constraint firstItem="3Zv-o8-3VO" firstAttribute="leading" secondItem="bfT-eu-Y4Q" secondAttribute="leading" id="QiP-B8-L5I"/>
-                            <constraint firstItem="7mQ-B3-V49" firstAttribute="top" secondItem="3Zv-o8-3VO" secondAttribute="bottom" constant="8" symbolic="YES" id="UYm-BL-zzj"/>
                             <constraint firstItem="O6x-6l-rwN" firstAttribute="top" secondItem="WNw-1A-yAB" secondAttribute="bottom" constant="8" symbolic="YES" id="Vke-9g-ZGF"/>
                             <constraint firstItem="bfT-eu-Y4Q" firstAttribute="trailing" secondItem="AgK-bG-nOR" secondAttribute="trailing" constant="20" id="elU-8B-xRS"/>
                             <constraint firstItem="bfT-eu-Y4Q" firstAttribute="trailing" secondItem="4fk-qr-bPl" secondAttribute="trailing" constant="20" id="g0H-qa-4PM"/>
                             <constraint firstItem="WNw-1A-yAB" firstAttribute="leading" secondItem="bfT-eu-Y4Q" secondAttribute="leading" constant="20" id="hJY-We-ThF"/>
                             <constraint firstItem="3Zv-o8-3VO" firstAttribute="trailing" secondItem="bfT-eu-Y4Q" secondAttribute="trailing" id="j11-Sg-cFR"/>
+                            <constraint firstItem="4qC-0a-Oms" firstAttribute="top" secondItem="3Zv-o8-3VO" secondAttribute="bottom" constant="8" symbolic="YES" id="kIH-UN-hGK"/>
                             <constraint firstItem="WNw-1A-yAB" firstAttribute="top" secondItem="qC2-1C-LJl" secondAttribute="bottom" constant="8" symbolic="YES" id="mfF-re-uQV"/>
                             <constraint firstItem="O6x-6l-rwN" firstAttribute="leading" secondItem="bfT-eu-Y4Q" secondAttribute="leading" constant="20" id="p15-Lb-dYG"/>
+                            <constraint firstItem="bfT-eu-Y4Q" firstAttribute="trailing" secondItem="4qC-0a-Oms" secondAttribute="trailing" constant="20" id="vnj-AL-ckR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -172,8 +207,9 @@
                         <outlet property="cpfTextField" destination="qC2-1C-LJl" id="Obm-1w-gNe"/>
                         <outlet property="dataNascimentoDatePicker" destination="3Zv-o8-3VO" id="RmF-Q7-MuJ"/>
                         <outlet property="emailTextField" destination="WNw-1A-yAB" id="7cU-Q1-V1f"/>
+                        <outlet property="enderecoLabel" destination="4qC-0a-Oms" id="lOf-P8-ugK"/>
                         <outlet property="nomeTextField" destination="4fk-qr-bPl" id="43C-MQ-ZEx"/>
-                        <segue destination="5Tz-hx-ZL1" kind="presentation" identifier="cadastroPessoaParaCadastroEndereco" id="46u-9T-r2P"/>
+                        <segue destination="5Tz-hx-ZL1" kind="presentation" identifier="cadastroPessoaParaCadastroEndereco" modalPresentationStyle="fullScreen" id="46u-9T-r2P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eed-ji-6ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -185,7 +221,7 @@
             <objects>
                 <viewController id="5Tz-hx-ZL1" customClass="CadastroEnderecoViewController" customModule="CadastroPessoaEndereco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jz7-dj-vdj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adicionar Endereço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zm-Iq-xq6">
@@ -196,6 +232,9 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Logadouro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Waw-ga-jAv">
                                 <rect key="frame" x="20" y="69" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Aen-wf-5DF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -203,17 +242,24 @@
                                 <rect key="frame" x="20" y="111" width="87" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="EtI-ny-wY4"/>
+                                    <constraint firstAttribute="height" constant="34" id="fgU-l8-mMT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Complemento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rRl-4G-OxD">
                                 <rect key="frame" x="115" y="111" width="279" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="CNw-Ez-acm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bairro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eN-Fl-5b2">
                                 <rect key="frame" x="20" y="153" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="eIC-qY-VkS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -299,7 +345,7 @@
             <objects>
                 <viewController id="dGm-Jz-ue2" customClass="DetalhesUsuarioViewController" customModule="CadastroPessoaEndereco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dMw-Nh-UUF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wj6-LX-L3s">
@@ -339,7 +385,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jn-9l-CHw">
-                                <rect key="frame" x="20" y="650" width="374" height="46"/>
+                                <rect key="frame" x="20" y="670" width="374" height="46"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="57w-qi-afk"/>

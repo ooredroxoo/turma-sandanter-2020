@@ -23,4 +23,13 @@ class Endereco {
         self.cidade = cidade
         self.estado = estado
     }
+    
+    func descricao() -> String {
+        var enderecoText = "\(self.endereco), nº \(self.numero)"
+        if let complemento = self.complemento {
+            enderecoText = "\(enderecoText)\n\(complemento)"
+        }
+        enderecoText += "\n\(self.bairro) - \(self.cidade)/\(self.estado)"
+        return enderecoText
+    }
 }

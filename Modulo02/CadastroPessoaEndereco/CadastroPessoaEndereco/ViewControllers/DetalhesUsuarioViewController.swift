@@ -16,14 +16,29 @@ class DetalhesUsuarioViewController: UIViewController {
     @IBOutlet weak var enderecoLabel: UILabel!
     @IBOutlet weak var voltarButton: UIButton!
     
+    var pessoa: Pessoa?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let _pessoa = self.pessoa {
+            self.nomeLabel.text = _pessoa.nome
+            self.cpfLabel.text = "CPF: \(_pessoa.cpf)"
+            self.dataNascimentoLabel.text = "Data Nascimento: \(_pessoa.dataNascimento)"
+            self.emailLabel.text = "e-mail: \(_pessoa.email)"
+            
+            if let endereco = _pessoa.endereco {
+                var enderecoText = endereco.descricao()
+                enderecoLabel.text = enderecoText
+            } else {
+                enderecoLabel.text = "Sem endereço"
+            }
+            
+        }
         // Do any additional setup after loading the view.
     }
     
     @IBAction func voltarAction(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*
