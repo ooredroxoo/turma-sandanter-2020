@@ -127,6 +127,21 @@
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="3Zv-o8-3VO">
                                 <rect key="frame" x="0.0" y="224" width="414" height="216"/>
+                                <connections>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="editingDidBegin" id="20C-Xd-eJ2"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="touchDownRepeat" id="7Zr-Rl-0Km"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="primaryActionTriggered" id="BFG-IC-TbD"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="touchDragInside" id="O60-2i-G59"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="touchDown" id="Pp7-Ua-RXQ"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="touchDragEnter" id="RCV-L2-Mud"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="touchUpInside" id="S2q-aO-Cfs"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="touchCancel" id="TVw-nj-Agy"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="editingChanged" id="VoE-jr-8mz"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="touchDragExit" id="cjX-ek-TDO"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="touchDragOutside" id="lYm-dR-mPG"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="valueChanged" id="mwr-UP-BWa"/>
+                                    <action selector="dismissKeyboardFromDatePicker:" destination="fAk-M3-2GW" eventType="touchUpOutside" id="ob5-gT-sXJ"/>
+                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de Nascimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6x-6l-rwN">
                                 <rect key="frame" x="20" y="195" width="374" height="21"/>

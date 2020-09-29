@@ -79,6 +79,16 @@ class CadastroPessoaViewController: UIViewController {
         }
         return false;
     }
+    
+    @IBAction func dismissKeyboardFromDatePicker(_ sender: UIDatePicker) {
+        if self.nomeTextField.isFirstResponder {
+            self.nomeTextField.resignFirstResponder()
+        } else if self.cpfTextField.isFirstResponder {
+            self.cpfTextField.resignFirstResponder()
+        } else if self.emailTextField.isFirstResponder {
+            self.emailTextField.resignFirstResponder()
+        }
+    }
     /*
     // MARK: - Navigation
 
