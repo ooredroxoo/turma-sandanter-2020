@@ -24,7 +24,9 @@ class DetalhesUsuarioViewController: UIViewController {
             self.nomeLabel.text = _pessoa.nome
             self.cpfLabel.text = "CPF: \(_pessoa.cpf)"
             
-            let dateString: String = _pessoa.dataNascimento.description(with: .current)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy"
+            let dateString: String = dateFormatter.string(from: _pessoa.dataNascimento)
             
             self.dataNascimentoLabel.text = "Data Nascimento: \(dateString)"
             self.emailLabel.text = "e-mail: \(_pessoa.email)"
