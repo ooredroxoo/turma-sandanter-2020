@@ -16,6 +16,8 @@ class CadastroPessoaViewController: UIViewController {
     @IBOutlet weak var adicionarEnderecoButton: UIButton!
     @IBOutlet weak var cadastrarUsuarioButton: UIButton!
     
+    var delegate: PessoaCadastroDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +27,7 @@ class CadastroPessoaViewController: UIViewController {
 
     
     @IBAction func adicionarEnderecoAction(_ sender: UIButton) {
+        performSegue(withIdentifier: SegueIdentifier.cadastroPessoaParaCadastroEndereco.rawValue, sender: self)
     }
     
     @IBAction func cadastrarUsuarioAction(_ sender: UIButton) {

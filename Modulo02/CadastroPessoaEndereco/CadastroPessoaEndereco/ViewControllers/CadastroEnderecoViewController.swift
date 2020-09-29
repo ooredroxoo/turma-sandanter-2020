@@ -17,7 +17,7 @@ class CadastroEnderecoViewController: UIViewController {
     @IBOutlet weak var estadoTextField: UITextField!
     @IBOutlet weak var adicionaEnderecoButton: UIButton!
     
-    
+    var delegate: EnderecoCadastroDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,7 @@ class CadastroEnderecoViewController: UIViewController {
     }
     
     @IBAction func adicionaEnderecoAction(_ sender: UIButton) {
+        // Valida endereco
     }
     
     /*

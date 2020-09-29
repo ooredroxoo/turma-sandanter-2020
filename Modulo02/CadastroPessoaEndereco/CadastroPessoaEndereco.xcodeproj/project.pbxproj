@@ -11,6 +11,9 @@
 		BC4EDC702522AAA300F991BC /* CadastroPessoaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EDC6F2522AAA300F991BC /* CadastroPessoaViewController.swift */; };
 		BC4EDC782522AAB400F991BC /* CadastroEnderecoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EDC772522AAB400F991BC /* CadastroEnderecoViewController.swift */; };
 		BC4EDC7D2522AAC600F991BC /* DetalhesUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EDC7C2522AAC600F991BC /* DetalhesUsuarioViewController.swift */; };
+		BC4EDC822522AEAF00F991BC /* SegueIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EDC812522AEAF00F991BC /* SegueIdentifier.swift */; };
+		BC4EDC882522B02600F991BC /* PessoaCadastroDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EDC872522B02600F991BC /* PessoaCadastroDelegate.swift */; };
+		BC4EDC8D2522B05600F991BC /* EnderecoCadastroDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EDC8C2522B05600F991BC /* EnderecoCadastroDelegate.swift */; };
 		BC5EF6692522A1C400668419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EF6682522A1C400668419 /* AppDelegate.swift */; };
 		BC5EF66B2522A1C400668419 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EF66A2522A1C400668419 /* SceneDelegate.swift */; };
 		BC5EF66D2522A1C400668419 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EF66C2522A1C400668419 /* ViewController.swift */; };
@@ -44,6 +47,9 @@
 		BC4EDC6F2522AAA300F991BC /* CadastroPessoaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroPessoaViewController.swift; sourceTree = "<group>"; };
 		BC4EDC772522AAB400F991BC /* CadastroEnderecoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroEnderecoViewController.swift; sourceTree = "<group>"; };
 		BC4EDC7C2522AAC600F991BC /* DetalhesUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesUsuarioViewController.swift; sourceTree = "<group>"; };
+		BC4EDC812522AEAF00F991BC /* SegueIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifier.swift; sourceTree = "<group>"; };
+		BC4EDC872522B02600F991BC /* PessoaCadastroDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PessoaCadastroDelegate.swift; sourceTree = "<group>"; };
+		BC4EDC8C2522B05600F991BC /* EnderecoCadastroDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnderecoCadastroDelegate.swift; sourceTree = "<group>"; };
 		BC5EF6652522A1C400668419 /* CadastroPessoaEndereco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CadastroPessoaEndereco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5EF6682522A1C400668419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5EF66A2522A1C400668419 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +102,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		BC4EDC862522B00700F991BC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC4EDC872522B02600F991BC /* PessoaCadastroDelegate.swift */,
+				BC4EDC8C2522B05600F991BC /* EnderecoCadastroDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		BC5EF65C2522A1C400668419 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +134,7 @@
 		BC5EF6672522A1C400668419 /* CadastroPessoaEndereco */ = {
 			isa = PBXGroup;
 			children = (
+				BC4EDC862522B00700F991BC /* Protocols */,
 				BC4EDC6E2522AA8C00F991BC /* ViewControllers */,
 				BC5EF69B2522A21000668419 /* Model */,
 				BC5EF6682522A1C400668419 /* AppDelegate.swift */,
@@ -128,6 +144,7 @@
 				BC5EF6712522A1CD00668419 /* Assets.xcassets */,
 				BC5EF6732522A1CD00668419 /* LaunchScreen.storyboard */,
 				BC5EF6762522A1CD00668419 /* Info.plist */,
+				BC4EDC812522AEAF00F991BC /* SegueIdentifier.swift */,
 			);
 			path = CadastroPessoaEndereco;
 			sourceTree = "<group>";
@@ -295,7 +312,10 @@
 				BC4EDC702522AAA300F991BC /* CadastroPessoaViewController.swift in Sources */,
 				BC5EF6692522A1C400668419 /* AppDelegate.swift in Sources */,
 				BC5EF69D2522A22700668419 /* Endereco.swift in Sources */,
+				BC4EDC882522B02600F991BC /* PessoaCadastroDelegate.swift in Sources */,
+				BC4EDC8D2522B05600F991BC /* EnderecoCadastroDelegate.swift in Sources */,
 				BC5EF66B2522A1C400668419 /* SceneDelegate.swift in Sources */,
+				BC4EDC822522AEAF00F991BC /* SegueIdentifier.swift in Sources */,
 				BC4EDC7D2522AAC600F991BC /* DetalhesUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

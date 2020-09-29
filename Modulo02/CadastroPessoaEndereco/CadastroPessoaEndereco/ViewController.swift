@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func adicionaUsuario(_ sender: UIButton) {
+        performSegue(withIdentifier: SegueIdentifier.mainToCadastroPessoa.rawValue, sender: self)
     }
     
 }
@@ -41,7 +42,7 @@ extension ViewController : UITableViewDataSource {
 
 extension ViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        performSegue(withIdentifier: SegueIdentifier.mainToDetalhes.rawValue, sender: self.pessoas[indexPath.row])
     }
 }
 
