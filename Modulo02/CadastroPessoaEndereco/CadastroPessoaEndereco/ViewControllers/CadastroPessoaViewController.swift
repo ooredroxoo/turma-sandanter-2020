@@ -35,7 +35,7 @@ class CadastroPessoaViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if let _endereco = self.endereco {
-            enderecoLabel.text = ""
+            enderecoLabel.text = _endereco.descricao()
             enderecoLabel.textColor = .systemPurple
         } else {
             enderecoLabel.text = "Sem endereço"

@@ -23,7 +23,10 @@ class DetalhesUsuarioViewController: UIViewController {
         if let _pessoa = self.pessoa {
             self.nomeLabel.text = _pessoa.nome
             self.cpfLabel.text = "CPF: \(_pessoa.cpf)"
-            self.dataNascimentoLabel.text = "Data Nascimento: \(_pessoa.dataNascimento)"
+            
+            let dateString: String = _pessoa.dataNascimento.description(with: .current)
+            
+            self.dataNascimentoLabel.text = "Data Nascimento: \(dateString)"
             self.emailLabel.text = "e-mail: \(_pessoa.email)"
             
             if let endereco = _pessoa.endereco {
